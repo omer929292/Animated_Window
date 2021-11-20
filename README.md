@@ -21,7 +21,7 @@ Make an animated window.
 
 * Make an animated window
 * Set height, width and color to window
-* set a border to window as well as its width, color and radius
+* Set a border to window as well as its width, color and radius
 * Set a position within scaffold using alignment
 * Set animation type (Sizing or scaling)
 * Set duration to animation
