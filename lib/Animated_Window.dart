@@ -1,22 +1,11 @@
 
 
 import 'package:flutter/cupertino.dart';
-
 import 'package:flutter/material.dart';
 import 'dart:ui';
 
 
-
-
-
-
-
-
-
-
 class Animated_Window extends StatefulWidget {
-
-
   //Window's height
   double height;
 
@@ -53,8 +42,6 @@ class Animated_Window extends StatefulWidget {
   bool scale;
 
 
-
-
   Animated_Window({
     required this.height,
     required this.width,
@@ -69,33 +56,21 @@ class Animated_Window extends StatefulWidget {
     this.scale=false
   });
 
-
-
-
-
-
-
-
   @override
   _Animated_WindowState createState() => _Animated_WindowState();
-
 
 }
 
 class _Animated_WindowState extends State<Animated_Window> with TickerProviderStateMixin {
   @override
-
-  //here
-
-
   Widget build(BuildContext context) {
-
-
+    //Using isReverse to set open/close
     if(widget.isReverse==false)
       _controller.forward();
     else
       _controller.reverse();
 
+    //Using scale property to set scaling/sizing
     if(widget.scale==false)
       return Align(alignment:Alignment(0,0),child:size());
     else
@@ -121,16 +96,13 @@ class _Animated_WindowState extends State<Animated_Window> with TickerProviderSt
     _controller.dispose();
   }
 
+
   Widget size(){
     return SizeTransition(
-
-      //-widget.alignment.y
-
       sizeFactor: _animation,
       axis: Axis.vertical,
       axisAlignment: 0,
-
-      //כאן שולטים על המיקום
+      //Using alignment property to control position
       child:  Align(alignment:widget.alignment,child:Reset_Window()),
     );
   }
@@ -140,15 +112,10 @@ class _Animated_WindowState extends State<Animated_Window> with TickerProviderSt
     return ScaleTransition(
       scale: _animation,
       child: Reset_Window(),
-
-      //כאן שולטים על המיקום
+      //Using alignment property to control position
       alignment: widget.alignment,
     );
   }
-
-
-
-
 
 
   Widget Reset_Window(){
@@ -167,16 +134,6 @@ class _Animated_WindowState extends State<Animated_Window> with TickerProviderSt
         child: widget.child
     );
   }
-
-
-
-
-
-
-
-
-
-
 
 
 }

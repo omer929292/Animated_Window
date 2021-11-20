@@ -7,7 +7,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -45,8 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Text("Open")
     );
   }
-
-
+  
   bool isPressed=false;
   bool isReverse=false;
 
@@ -76,6 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           )
           ),
+          Center(child: Text("Window",style: TextStyle(color:Colors.white,fontSize: 50)))
         ],
       ),
     );
