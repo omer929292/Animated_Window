@@ -78,7 +78,7 @@ Here are the accepted parameters :
 
 | Size  | Scale | 
 | ------------- | ------------- | 
-| <img src="assets/size.gif" width="350" height="600">  |  <img src="assets/scale.gif" width="350" height="600">  | 
+| <img src="assets/size.gif" width="250" height="500">  |  <img src="assets/scale.gif" width="250" height="500">  | 
 
 
 
