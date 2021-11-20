@@ -78,7 +78,7 @@ Here are the accepted parameters :
 
 | Opacity  | Scale | 
 | ------------- | ------------- | 
-| <img src="assets/opac.gif" width="500" height="1000">  |  <img src="assets/scale.gif" width="334" height="668"> | 
+| <img src="assets/size.gif" width="350" height="700">  |  <img src="assets/scale_gif.gif" width="350" height="700"> | 
 
 
 
